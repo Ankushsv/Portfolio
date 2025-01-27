@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
-  <body>
+  <body style="background-image: url(./src/assest/images/dark-background-abstract-background-network-3d-background-3840x2160-8324.png)">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+<script src="three.r134.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<script>
+  VANTA.BIRDS({
+    el: "#root",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
+</script>
+</script>
   </body>
 </html>
