@@ -26,7 +26,7 @@ const About = () => {
           About Me
         </h1>
 
-        {/* Introduction */}
+        {/* MY Introduction */}
         <motion.div
           className="mb-16"
           variants={sectionVariant}
@@ -49,7 +49,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Skills */}
+        {/* MY Skills */}
         <motion.div
           className="mb-16"
           variants={sectionVariant}
@@ -70,7 +70,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Experience */}
+        {/*MY  Experience */}
         <motion.div
           className="mb-16"
           variants={sectionVariant}
@@ -89,7 +89,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Hobbies */}
+        {/*MY Hobbies */}
         <motion.div
           className="mb-16"
           variants={sectionVariant}
@@ -105,7 +105,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Contact */}
+        {/*MU Contact */}
         <section id='contact-section'>
         <motion.div
           variants={sectionVariant}

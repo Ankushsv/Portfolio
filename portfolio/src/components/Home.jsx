@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to text-white">
       
-      {/* Profile Picture with Floating Animation */}
+      
       <motion.div
         initial={{ y: -10 }}
         animate={{ y: 10 }}
@@ -30,7 +30,6 @@ const Home = () => {
         <img src={myImage} alt="Profile" className="w-full h-full object-cover" />
       </motion.div>
 
-      {/* Welcome Text with Slide & Fade Effect */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -40,7 +39,7 @@ const Home = () => {
         Hi, I'm <span className="text-teal-400">Ankush</span> ✌️
       </motion.h1>
 
-      {/* Typing Animation for Role */}
+     
       <motion.h2
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -58,7 +57,7 @@ const Home = () => {
 />
       </motion.h2>
 
-      {/* Subtext */}
+      
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -69,7 +68,7 @@ const Home = () => {
         <span className="text-teal-300 font-semibold">React, Node.js, Express & MongoDB</span>.
       </motion.p>
 
-      {/* CTA Buttons */}
+ 
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
