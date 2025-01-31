@@ -23,9 +23,11 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
+            whileHover={{ scale: 1.1 , transition: { duration: 0.3 } }}
             initial={{ opacity: 0 , y: 60}}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
+
             className="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl "
           >
             {skill.icon}

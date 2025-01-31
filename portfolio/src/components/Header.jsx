@@ -7,7 +7,9 @@ export default function Header (){
       <div className='w-full   bg-gray-700 '>
         <div className='flex justify-between items-center p-3'>
           <div className='text-2xl text-blue-500 font-bold '>
-            <Link to = '/'>
+            <Link to = '/'
+            className='font-pacifico'
+            >
             Ankush Singh
             </Link>
           </div>
@@ -40,12 +42,7 @@ export default function Header (){
               }}>
               Skills
              </NavLink>
-              <NavLink to={"/trial"}
-                className={({isActive})=>{
-                  return `${isActive ? 'text-emerald-500' : 'text-white'} text-sm`
-                }}>
-                Contact
-              </NavLink>
+           
           </div>
         </div>
       </div>

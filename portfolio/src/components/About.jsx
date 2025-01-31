@@ -1,12 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
   // Animation Variants
   const sectionVariant = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+    visible: { opacity: 1, y: 0, },
   }; 
+  const location = useLocation();
+  useEffect(()=>{
+    if(location.hash === '#contact-section'){
+        const element = document.getElementById('contact-section');
+        if(element){
+          element.scrollIntoView({behavior : 'smooth'});
+        }
+    }
+  }, [location]);
 
   return (
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to- text-gray-300 min-h-screen py-10 px-4">
@@ -21,7 +32,8 @@ const About = () => {
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          transition= {{ duration: 0.4} }
+          viewport={{ once: true, amount: 0.8 }}
         >
           <h2 className="text-3xl font-semibold text-teal-400 mb-4">
             Introduction
@@ -43,6 +55,7 @@ const About = () => {
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
+          transition= {{ duration: 0.6 } }
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="text-3xl font-semibold text-teal-400 mb-4">Skills</h2>
@@ -63,6 +76,7 @@ const About = () => {
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
+          transition= {{ duration: 0.8 } }
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="text-3xl font-semibold text-teal-400 mb-4">
@@ -81,6 +95,7 @@ const About = () => {
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
+          transition= {{ duration: 1 } }
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="text-3xl font-semibold text-teal-400 mb-4">Hobbies</h2>
@@ -91,6 +106,7 @@ const About = () => {
         </motion.div>
 
         {/* Contact */}
+        <section id='contact-section'>
         <motion.div
           variants={sectionVariant}
           initial="hidden"
@@ -112,6 +128,7 @@ const About = () => {
             </a>.
           </p>
         </motion.div>
+        </section>
       </div>
     </div>
   );

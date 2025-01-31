@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -8,6 +9,8 @@ export default {
     extend: {
       fontFamily: {
         playwrite: ['"Playwrite VN"', 'sans-serif'],
+        beabue : ['"Beabas Neue"', 'sans-serif'],
+        pacifico : ['"Pacifico"', 'cursive'],
       },
     },
   },

@@ -7,7 +7,7 @@ import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import { Projects } from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
-import Trial from './components/Trial.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +16,7 @@ const router = createBrowserRouter(
       <Route path='about' element = {<About/>}/>
       <Route path='projects' element = {<Projects/>}/>
       <Route path='skills' element = {<Skills/>}/>
-       <Route path='trial' element = {<Trial/>}/>
+     
 
     </Route>
   )
